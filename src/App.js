@@ -1,7 +1,13 @@
+import Appbar from "./components/Appbar";
+import Upload from "./components/Upload";
+import Gallery from "./components/Gallery";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello!</h1>
+    <div className="App" style={{ backgroundImage: "url(/collage.jpg)" }}>
+      <Appbar />
+      <Upload />
+      <Gallery />
     </div>
   );
 }
