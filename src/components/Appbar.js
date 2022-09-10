@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../index.css";
+import "./Appbar.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,7 +11,7 @@ export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{ background: "#ffffff" }}>
-        <Toolbar>
+        <Toolbar className="toolbar">
           <IconButton
             size="large"
             edge="start"
@@ -21,12 +21,12 @@ export default function ButtonAppBar() {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography
-            variant="h6"
+            variant=""
             component="div"
             sx={{ flexGrow: 1 }}
-            color="dodgerblue"
+            color="#7aa7ff"
           >
-            News
+            AsavGram
           </Typography>
           <Button>Login</Button>
         </Toolbar>
