@@ -7,6 +7,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import "./Gallery.css";
 
 export default function BasicGrid() {
   return (
@@ -19,24 +21,26 @@ export default function BasicGrid() {
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0.5}>
-            <Grid xs={3}>
-              <Card sx={{ maxWidth: 345 }}>
+            <Grid xs={3} display="flex" justifyContent="space-around">
+              <Card sx={{ maxWidth: 345 }} className="cardimg">
                 <CardMedia
                   component="img"
                   height="335"
-                  image={require("../images/vaca_1.jpg")}
+                  image={require("../images/wedDad.jpg")}
                   alt="Vaca 1"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Poolside Code
+                    Aisle Walk
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    "Code, waterslide, code, waterslide, snowcone, code ..."
+                    Alyona walking down the aisle with dad, Ivan.
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Like</Button>
+                  <Button size="small">
+                    <FavoriteIcon />
+                  </Button>
                   <Button size="small">Learn More</Button>
                 </CardActions>
               </Card>
@@ -46,19 +50,21 @@ export default function BasicGrid() {
                 <CardMedia
                   component="img"
                   height="335"
-                  image={require("../images/vaca_1.jpg")}
+                  image={require("../images/beauty.jpg")}
                   alt="Vaca 1"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Poolside Code
+                    Alyona Hatchell
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    "Code, waterslide, code, waterslide, snowcone, code ..."
+                    A beautiful woman. Wife of HatchBase CEO.
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Like</Button>
+                  <Button size="small">
+                    <FavoriteIcon />
+                  </Button>
                   <Button size="small">Learn More</Button>
                 </CardActions>
               </Card>
@@ -68,19 +74,21 @@ export default function BasicGrid() {
                 <CardMedia
                   component="img"
                   height="335"
-                  image={require("../images/vaca_1.jpg")}
+                  image={require("../images/uni2.jpg")}
                   alt="Vaca 1"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Poolside Code
+                    Premium PassHolder
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    "Code, waterslide, code, waterslide, snowcone, code ..."
+                    Alyona takes vacations to Universal Studios.
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Like</Button>
+                  <Button size="small">
+                    <FavoriteIcon />
+                  </Button>
                   <Button size="small">Learn More</Button>
                 </CardActions>
               </Card>
@@ -90,20 +98,123 @@ export default function BasicGrid() {
                 <CardMedia
                   component="img"
                   height="335"
-                  image={require("../images/vaca_1.jpg")}
+                  image={require("../images/uni1.jpg")}
                   alt="Vaca 1"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Poolside Code
+                    Cool Cars, Cool Gal
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    "Code, waterslide, code, waterslide, snowcone, code ..."
+                    Alyona likes to take meaningful pictures.
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Like</Button>
+                  <Button className="card-button" size="small">
+                    <FavoriteIcon />
+                  </Button>
+                  <Button className="card-button" size="small">
+                    Learn More
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* new row */}
+            <Grid xs={3} display="flex" justifyContent="space-around">
+              <Card sx={{ maxWidth: 345 }} className="cardimg">
+                <CardMedia
+                  component="img"
+                  height="335"
+                  image={require("../images/supra.jpg")}
+                  alt="Vaca 1"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Shes a Keeper
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Alyona glancing at a new supra.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">
+                    <FavoriteIcon />
+                  </Button>
                   <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid xs={3}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  height="335"
+                  image={require("../images/wed2.jpg")}
+                  alt="Vaca 1"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Alyona and Nathan
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    The happy newlyweds
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">
+                    <FavoriteIcon />
+                  </Button>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid xs={3}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  height="335"
+                  image={require("../images/wed.jpg")}
+                  alt="Vaca 1"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Wedding
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Alyona marrys Nathan on 10.10.21
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">
+                    <FavoriteIcon />
+                  </Button>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid xs={3}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  height="335"
+                  image={require("../images/couple.jpg")}
+                  alt="Vaca 1"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    A Cool Couple
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Alyona and Nathan being posers.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button className="card-button" size="small">
+                    <FavoriteIcon />
+                  </Button>
+                  <Button className="card-button" size="small">
+                    Learn More
+                  </Button>
                 </CardActions>
               </Card>
             </Grid>
