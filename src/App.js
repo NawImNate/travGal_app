@@ -1,6 +1,8 @@
 import Appbar from "./components/Appbar";
 import Upload from "./components/Upload";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
+import "./index.css";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Appbar />
       <Upload />
       <Gallery />
+      <Footer />
     </div>
   );
 }
